@@ -18,8 +18,11 @@ dependencies = [
     "pylance>=0.19.2",
     "scikit-learn>=1.5.2",
     "seaborn>=0.13.2",
+    "spacy>=3.8.3",
     "tensorflow-datasets>=4.9.7",
     "tensorflow-intel>=2.18.0",
     "tensorflow>=2.18.0",
+    "tf-keras>=2.18.0",
     "torch>=2.5.1",
+    "transformers>=4.47.0",
 ]

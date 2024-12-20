@@ -484,6 +484,7 @@ dependencies = [
     { name = "gymnasium", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
     { name = "ipykernel", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
     { name = "jupyter", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+    { name = "keras-hub", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
     { name = "matplotlib", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
     { name = "numpy", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
     { name = "opencv-python", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
@@ -508,6 +509,7 @@ requires-dist = [
     { name = "gymnasium", specifier = "==0.29.1" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "keras-hub", specifier = ">=0.18.1" },
     { name = "matplotlib", specifier = ">=3.9.2" },
     { name = "numpy", specifier = ">=2.0.2" },
     { name = "opencv-python", specifier = ">=4.10.0.84" },
@@ -1220,6 +1222,20 @@ wheels = [
 ]
 
 [[package]]
+name = "kagglehub"
+version = "0.3.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+    { name = "requests", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+    { name = "tqdm", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d2/e4/76abe75c98776f1a72aa879d46f6e95f663074efd8b52acb93beefafe640/kagglehub-0.3.5.tar.gz", hash = "sha256:ebe2eed0c6e07ad517b9b48ffc886a97f6ae447a32ed1211a69f89ce64401bac", size = 63752 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/38/d0/6085847723db5bbfb3184f1c77de76cf33c3c3eec9d5dd0229187d2a0ab8/kagglehub-0.3.5-py3-none-any.whl", hash = "sha256:1905bb46eb52d60b5482f0815dea4c370280e4e9f4fe35b1384b286826f8741e", size = 44834 },
+]
+
+[[package]]
 name = "keras"
 version = "3.6.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1236,6 +1252,24 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/47/22/448401abc7deaee90592c48c5dcc27ad93518b605655bef7ec5eb9544fe5/keras-3.6.0.tar.gz", hash = "sha256:405727525a3522ed8f9ec0b46e0667e4c65fcf714a067322c16a00d902ded41d", size = 890295 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c2/88/eef50051a772dcb4433d1f3e4c1d6576ba450fe83e89d028d7e8b85a2122/keras-3.6.0-py3-none-any.whl", hash = "sha256:49585e4577f6e86bd890d96dfbcb1890f5bab5967ef831c07fd63f9d86e4bfe9", size = 1191019 },
+]
+
+[[package]]
+name = "keras-hub"
+version = "0.18.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "absl-py", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+    { name = "kagglehub", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+    { name = "numpy", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+    { name = "packaging", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+    { name = "regex", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+    { name = "rich", marker = "(platform_machine != 'aarch64' and python_full_version >= '3.12') or (platform_system != 'Linux' and python_full_version >= '3.12') or platform_system == 'Darwin' or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+    { name = "tensorflow-text", marker = "(platform_machine != 'aarch64' and platform_system != 'Darwin' and python_full_version >= '3.12') or (platform_system != 'Darwin' and platform_system != 'Linux' and python_full_version >= '3.12') or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/33/0a/8fed7c03fd7acf15f486388a7a05586d20f5546e01407ba9120d2dd4c536/keras_hub-0.18.1.tar.gz", hash = "sha256:2aa6b2f233574cbe8193380d919ae4b516abcff8d96b210608b5b7af3762735c", size = 472629 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/02/ed/301ffa131fa576f0ed176a38c9be9be3d66af66dfc6f33e3ee792238e9c8/keras_hub-0.18.1-py3-none-any.whl", hash = "sha256:f1b83a2d2bc532ef39569e1201c03d0413f4e60aecd90293a42aca488a6ae6f2", size = 691170 },
 ]
 
 [[package]]
@@ -2892,6 +2926,18 @@ dependencies = [
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e0/57/393aa9dde72347cde9e01f665bac344f14adefd5c748be45b23aa5804f6d/tensorflow_metadata-1.16.1-py3-none-any.whl", hash = "sha256:2ce72ea31d78a00c0c74c6d465482335aa5cb2a3b2a104dedba0b258bc7bb18a", size = 28984 },
+]
+
+[[package]]
+name = "tensorflow-text"
+version = "2.18.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tensorflow", marker = "(platform_machine != 'aarch64' and platform_system != 'Darwin' and python_full_version >= '3.12') or (platform_system != 'Darwin' and platform_system != 'Linux' and python_full_version >= '3.12') or (platform_machine == 'aarch64' and platform_system == 'Linux')" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/34/86/3e0916e0fc1d723b09408adc898cf0aa0dce59608374d387a65b37b42367/tensorflow_text-2.18.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:295a7d405692841767ca02cef3c5bf266c9e6e25b3a77d001a554bb4d40e649a", size = 5447286 },
+    { url = "https://files.pythonhosted.org/packages/04/7b/7dcf287a3d6f8b5fb0f17558d560bb3c1e04185b33fa822749e35118142b/tensorflow_text-2.18.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b59ed1e0f524652eb19e282f85f1bbeb9779a27208499848532f2bb80496bdd1", size = 5240952 },
 ]
 
 [[package]]
